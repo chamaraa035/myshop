@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hpK3sgYrSnuaRzJuW79UxkLzDhJERBvBuabXIEuegBM=",
+  "Source": "MyShopCore.Web.API",
+  "BasePath": "_content/MyShopCore.Web.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
