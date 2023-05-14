@@ -6,7 +6,7 @@ namespace MyShopCore.Web.API.Services.Foundations.Products
     {
         ValueTask<Product> AddProductAsync(Product prodcut);
         IQueryable<Product> RetrieveAllProducts();
-        ValueTask<Product> retreiveProductBIdAsync(Guid prodcut);
+        ValueTask<Product> RetreiveProductBIdAsync(Guid prodcut);
         ValueTask<Product> ModifiedProductAsync(Product prodcut);
         ValueTask<Product> RemoveProductAsync(Product prodcut);
     }

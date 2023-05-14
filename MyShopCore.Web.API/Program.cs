@@ -1,6 +1,7 @@
 using MyShopCore.Web.API.Brokers.DateTimes;
 using MyShopCore.Web.API.Brokers.Loggings;
 using MyShopCore.Web.API.Brokers.Storagers;
+using MyShopCore.Web.API.Services.Foundations.Products;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,4 +38,5 @@ static void ServiceBroker(WebApplicationBuilder builder)
     builder.Services.AddTransient<IStrogeBrokers, StrogeBroker>();
     builder.Services.AddTransient<ILogginBrocker, LoggingBroker>();
     builder.Services.AddTransient<IDateTimeBroker, DateTimeBroker>();
+    builder.Services.AddTransient<IProductService, ProductService>();
 }

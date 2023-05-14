@@ -21,9 +21,9 @@ namespace MyShopCore.Web.API.Services.Foundations.Products
         public async ValueTask<Product> AddProductAsync(Product prodcut)
         {
             this.Loggingbroker.LogInformation($"{prodcut.Id} added");
+            prodcut.Id= Guid.NewGuid();
             prodcut.Created = this.dateTimebroker.GetCurrentDateTime();
             prodcut.CreatedBy=Guid.NewGuid();
-
             return await this.stroragebroker.InserrtProductAsync(prodcut);
         }
 
